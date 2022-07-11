@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dri's Music</title>
+</head>
+<body class="music-body" id="music-body" >
+    <header class="music-header">
+        <nav class="back-btn">
+            <a href="index.html"><ion-icon class="icon-back" name="arrow-back-outline"></ion-icon></a>
+        </nav>
+
+
+      <menu id="menu">
+          <nav id="menu-nav">
+            <ion-icon size="large" name="menu-sharp" id="menu-ion" onclick="dropDown(this)"></ion-icon>
+          </nav>
+      </menu>
+
+
+
+    </header>
+
+    <div class="menu-active" id="menu-active">
+        
+            <li><a href="story.html">Story</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        
+
+    </div>
+
+
+    <main id="main" onclick="removeOverlay(this)">
+        <section class="music-section">
+            <div class="album-img"><img class="signature"height="30px" src="img\drietta-blush-signature.png" alt=""></div>
+            <div class="ray"></div>
+            <div class="music-container" id="music-container">
+                
+                <div class="skips-container"  id="prev" onclick="prevSong(this)"></div>
+                
+                <div class="play-parent" id="play-parent">
+                    
+                    <div class="play-container" id="play-btn"  onclick="playSong(this)"> 
+                       
+                        <ion-icon class="play-icon" id="play" onclick="playSong(this)" name="play-sharp"></ion-icon>
+                    </div>
+                
+                </div>
+              
+                <div class="skips-container skips-container-right" id="next"   onclick="nextSong(this)"></div>
+            </div>
+        </section>
+
+   <audio src="music\Chasin Daisys.mp3" id="audio"></audio>
+
+
+    
+        
+    </main>
+<!-- ____________________________________________________________________________________________
+-->
+
+<div class="music-container-phone" id="music-container-phone" onclick="removeOverlay(this)">
+                
+    <div class="skips-container"  id="back-btn" onclick="prevSong(this)"></div>
+    
+    <div class="play-parent" id="prnt">
+        
+        <div class="play-container" id="play-btn"  onclick="playSong(this)"> 
+            <ion-icon class="play-icon" id="play" name="play-sharp"></ion-icon>
+        </div>
+    
+    </div>
+  
+    <div class="skips-container skips-container-right" id="forward-btn"  onclick="nextSong(this)"></div>
+</div>
+
+
+
+    <!-- ____________________________________________________________________________________________
+ -->
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

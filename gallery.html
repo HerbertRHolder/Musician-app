@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dri's Gallery</title>
+</head>
+<body class="gallery-body">
+    <header class="music-header">
+        <nav class="back-btn">
+            <a href="index.html"><ion-icon class="icon-back" name="arrow-back-outline"></ion-icon></a>
+        </nav>
+
+
+      <menu id="menu">
+          <nav id="menu-nav">
+            <ion-icon size="large" name="menu-sharp" id="menu-ion" onclick="dropMenu(this)"></ion-icon>
+          </nav>
+      </menu>
+
+
+
+    </header>
+
+    <div class="menu-active" id="menu-active">
+        
+        <li><a href="story.html">Story</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    
+
+</div>
+
+
+    <img class="gallery-img"src="img\gallery-removebg.png" alt="">
+
+    <section class="env-position">
+        <div class="envelope"></div>
+          <div class="env-back "></div>
+          <div class="lid1"></div>
+          <div class="lid2 "></div>
+          <img id="envelop-img1"  src="https://d.img.vision/viewer/download.jpg" alt="">
+          <!-- <img id="envelop-img2"  src="https://d.img.vision/viewer/mahdi-chaghari-HlNIC997xEk-unsplash.jpg" alt="">
+          <img id="envelop-img3"  src="https://d.img.vision/viewer/dom-hill-nimElTcTNyY-unsplash.jpg" alt=""> -->
+      </section>
+
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
